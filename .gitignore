@@ -1,0 +1,31 @@
+# Python Backend
+weather-monitoring-backend/venv/
+weather-monitoring-backend/__pycache__/
+weather-monitoring-backend/**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+
+# Environment Variables (CRITICAL - Contains API keys & passwords)
+.env
+*.env
+weather-monitoring-backend/.env
+
+# Node Frontend (already has its own .gitignore, but we'll add here too)
+weather-monitoring-frontend/node_modules/
+weather-monitoring-frontend/dist/
+weather-monitoring-frontend/dist-ssr/
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
