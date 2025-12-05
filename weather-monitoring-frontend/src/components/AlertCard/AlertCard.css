@@ -1,0 +1,121 @@
+.alert-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.alert-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Alert type colors */
+.alert-temperature {
+  border-left-color: #ff6b6b;
+  background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+}
+
+.alert-humidity {
+  border-left-color: #4dabf7;
+  background: linear-gradient(135deg, #fff 0%, #f0f9ff 100%);
+}
+
+.alert-extreme {
+  border-left-color: #ff922b;
+  background: linear-gradient(135deg, #fff 0%, #fff8f0 100%);
+}
+
+.alert-default {
+  border-left-color: #868e96;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+}
+
+.alert-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alert-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.alert-icon.temperature {
+  color: #ff6b6b;
+}
+
+.alert-icon.humidity {
+  color: #4dabf7;
+}
+
+.alert-icon.extreme {
+  color: #ff922b;
+}
+
+.alert-icon.default {
+  color: #868e96;
+}
+
+.alert-info {
+  flex: 1;
+}
+
+.alert-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.25rem 0;
+}
+
+.alert-time {
+  font-size: 0.75rem;
+  color: #868e96;
+}
+
+.alert-message {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+.alert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.alert-city {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.alert-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.alert-status.sent {
+  background: #d3f9d8;
+  color: #2f9e44;
+}
+
+.alert-status.pending {
+  background: #fff3bf;
+  color: #f08c00;
+}
